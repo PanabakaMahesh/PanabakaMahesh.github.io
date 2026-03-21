@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panabaka Mahesh | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header id="header">
+      <a href="#" class="logo">PM</a>
+      <div class="toggle" id="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu" id="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#education" onclick="toggleMenu();">Education</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <section class="banner" id="home">
+      <div class="banner-bg"></div>
+      <div class="banner-content">
+        <p class="banner-greeting">Hello, I'm</p>
+        <h1 class="banner-name">Panabaka <span>Mahesh</span></h1>
+        <h2 class="banner-role">
+          <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="banner-desc">B.Tech CSE Student at SRM University · AI &amp; ML Enthusiast · Problem Solver</p>
+        <div class="banner-btns">
+          <a href="#about" class="btn btn-primary">About Me</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+          <a href="ResumeMahesh_CSE.pdf" target="_blank" class="btn btn-outline">Resume</a>
+        </div>
+        <div class="banner-socials">
+          <a href="https://github.com/PanabakaMahesh" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/panabaka-mahesh-1637m/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://leetcode.com/u/mahesh1637/" target="_blank" title="LeetCode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+          <a href="mailto:panabakamahesh1637@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <!-- PHOTO replaces the rotating PM avatar -->
+      <div class="banner-visual">
+        <div class="photo-frame">
+          <img src="photo.jpg" alt="Panabaka Mahesh" class="hero-photo" />
+          <!-- Fallback initials shown only if photo missing -->
+          <div class="photo-fallback">PM</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hi! I'm <strong>Panabaka Mahesh</strong>, a passionate Computer Science &amp; Engineering student at SRM University, Chennai. I thrive at the intersection of <strong>AI, Machine Learning, and real-world problem solving</strong>.</p>
+          <p>I love building intelligent systems—from quantum cryptography simulations to computer vision-based traffic optimization. I believe technology should solve meaningful problems, and I bring that mindset to every project I undertake.</p>
+          <p>When I'm not coding, I'm sharpening my DSA skills on LeetCode, earning certifications, or competing in ideathons.</p>
+        </div>
+        <div class="about-info">
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-user"></i> Name</span>
+              <span class="info-value">Panabaka Mahesh</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-envelope"></i> Email</span>
+              <span class="info-value">panabakamahesh1637@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+              <span class="info-value">Chennai, Tamil Nadu</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> University</span>
+              <span class="info-value">SRM University KTR</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-star"></i> CGPA</span>
+              <span class="info-value">8.18 / 10</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label"><i class="fa-solid fa-briefcase"></i> Availability</span>
+              <span class="info-value">Open to Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Achievements -->
+      <div class="achievements">
+        <div class="achievement-card">
+          <i class="fa-solid fa-trophy"></i>
+          <h4>INN-ING 2.0</h4>
+          <p>2nd Place – Ideathon (Feb 2025)</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fa-solid fa-code"></i>
+          <h4>Active Coder</h4>
+          <p>LeetCode · HackerRank · CodeChef</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fa-solid fa-certificate"></i>
+          <h4>6+ Certifications</h4>
+          <p>NPTEL · Oracle · Fortinet · HackerRank</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fa-solid fa-atom"></i>
+          <h4>Quantum Research</h4>
+          <p>BB84 Protocol Simulation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Flask</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-brain"></i> AI / ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Qiskit</span>
+            <span class="skill-tag">YOLOv5</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">HuggingFace</span>
+            <span class="skill-tag">NLP</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-wrench"></i> Tools &amp; Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">DevOps</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Jupyter</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-lightbulb"></i> Core CS</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">OOP</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Creativity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <a href="https://github.com/PanabakaMahesh/Encryption_Decryption_in_Quantam_Cryptography" target="_blank" class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-atom"></i></div>
+          <div class="project-body">
+            <h3>Quantum Encryption &amp; Decryption</h3>
+            <p>A Python-based simulation of quantum encryption using the <strong>BB84 protocol</strong> and Qiskit. Enables secure key generation &amp; message transmission through quantum principles.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Qiskit</span><span>BB84 Protocol</span>
+            </div>
+          </div>
+          <div class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</div>
+        </a>
+
+        <a href="https://github.com/PanabakaMahesh/E-commerce_review_sentiment_analysis" target="_blank" class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="project-body">
+            <h3>E-Commerce Sentiment Analysis</h3>
+            <p>Flask web app that scrapes Amazon product reviews and analyzes sentiment using <strong>HuggingFace Transformers</strong>. Real-time visualization of positive, negative, and neutral insights.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Flask</span><span>NLP</span><span>HuggingFace</span>
+            </div>
+          </div>
+          <div class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</div>
+        </a>
+
+        <a href="https://github.com/PanabakaMahesh/Object-detection-used-for-livestock-count" target="_blank" class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-eye"></i></div>
+          <div class="project-body">
+            <h3>Livestock Count (YOLOv5)</h3>
+            <p>Deep learning system using <strong>YOLOv5</strong> to detect and count livestock in real-time from video feeds. Trained on custom datasets for accurate animal tracking in farm environments.</p>
+            <div class="project-tags">
+              <span>Python</span><span>YOLOv5</span><span>Computer Vision</span><span>Jupyter</span>
+            </div>
+          </div>
+          <div class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</div>
+        </a>
+
+        <a href="https://github.com/PanabakaMahesh/Traffic_Optimization" target="_blank" class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-traffic-light"></i></div>
+          <div class="project-body">
+            <h3>AI Traffic Optimization</h3>
+            <p>AI-powered system analyzing traffic video feeds to detect vehicle density using computer vision. <strong>Dynamically adjusts traffic light timings</strong> based on real-time congestion levels.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Flask</span><span>OpenCV</span><span>HTML/CSS/JS</span>
+            </div>
+          </div>
+          <div class="project-link"><i class="fa-brands fa-github"></i> View on GitHub</div>
+        </a>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://github.com/PanabakaMahesh" target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> See All Projects on GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022 – 2026*</span>
+            <h3>B.Tech – Computer Science &amp; Engineering</h3>
+            <h4>SRM University KTR, Chennai</h4>
+            <p class="timeline-grade"><i class="fa-solid fa-star"></i> CGPA: 8.18 / 10</p>
+            <p>Focused on AI, Machine Learning, Data Structures, and full-stack development. Active participant in hackathons and ideathons.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">Completed 2022</span>
+            <h3>12th Standard</h3>
+            <h4>GRT Mahalakshmi Vidyalaya, Chennai</h4>
+            <p class="timeline-grade"><i class="fa-solid fa-star"></i> Percentage: 80%</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certificates -->
+      <div class="section-header" style="margin-top:60px;">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>Java Programming – NPTEL</span></div>
+        <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>DSA – Udemy</span></div>
+        <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>Cloud Infrastructure – Oracle</span></div>
+        <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>Cybersecurity – Fortinet</span></div>
+        <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>Python – HackerRank</span></div>
+        <div class="cert-card"><i class="fa-solid fa-certificate"></i><span>JavaScript – HackerRank</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-sub">I'm open to internships, collaborations, and exciting opportunities!</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-box">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>panabakamahesh1637@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Chennai, Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 95500 25238</p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/PanabakaMahesh" target="_blank">github.com/PanabakaMahesh</a></p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/panabaka-mahesh-1637m/" target="_blank">Panabaka Mahesh</a></p>
+            </div>
+          </div>
+          <div class="coding-profiles">
+            <h4>Coding Profiles</h4>
+            <div class="profile-links">
+              <a href="https://leetcode.com/u/mahesh1637/" target="_blank"><i class="fa-solid fa-code"></i> LeetCode</a>
+              <a href="https://www.hackerrank.com/profile/panabakamahesh11" target="_blank"><i class="fa-brands fa-hackerrank"></i> HackerRank</a>
+              <a href="https://www.codechef.com/users/mahesh1637" target="_blank"><i class="fa-solid fa-utensils"></i> CodeChef</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <h3>Send a Message</h3>
+          <input type="text" placeholder="Your Full Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your Message..." required></textarea>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note" id="form-msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <p class="footer-name">Panabaka Mahesh</p>
+        <div class="footer-socials">
+          <a href="https://github.com/PanabakaMahesh" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/panabaka-mahesh-1637m/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:panabakamahesh1@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Panabaka Mahesh. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
