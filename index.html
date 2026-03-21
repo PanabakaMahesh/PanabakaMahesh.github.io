@@ -352,7 +352,9 @@
           </div>
         </div>
 
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a9c7f5e4-8e7c-4235-9146-74cd4f54037c">
+          <input type="hidden" name="subject" value="New message from Portfolio Contact Form">
           <h3>Send a Message</h3>
           <input type="text" placeholder="Your Full Name" required />
           <input type="email" placeholder="Your Email" required />
